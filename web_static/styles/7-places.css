@@ -1,0 +1,47 @@
+.places{
+  width: 390px;
+  /* text-align: center; */
+  display: grid;
+  grid-template-columns: 3rem 1fr 1fr 1fr 1fr 1rem;
+  grid-template-rows: 3rem 1fr 1fr;
+  place-items: center;
+  gap:1rem;
+  grid-template-areas: 
+  "head head head head head head"
+  ".... one one two two ...."
+  ". three three three three ."
+  ;
+
+}
+
+.h1{
+  grid-area: head;
+  justify-self: left;
+}
+
+.flex1{
+  grid-area: one;
+
+}
+.flex2{
+  grid-area: two;
+ 
+}
+.flex3{
+grid-area: three;
+
+}
+.places > h1{
+  text-align: start;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+article{
+  width: 390px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  border: 1px solid #FF5A5F;
+  
+}
